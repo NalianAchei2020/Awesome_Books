@@ -4,23 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Awesome Books</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <section class="main">
    <section>
-    <h1>Awesome books</h1>
-    <article class="main">
-
-    </article>
+    <h3 class="heading">All awesome books</h3>
+    <table id="bookTable" class="display">
+       
+    </table>
    </section> 
    <section class="books">
+    <h3>Add a new book</h3>
    <p>
-    <input type="text" placeholder="Title" name="title" id="bookTitle"/>
+    <input type="text" placeholder="Title" name="title" id="bookTitle" required>
    </p>
    <p>
-    <input type="text" placeholder="Author" name="author" id="bookauthor"/>
+    <input type="text" placeholder="Author" name="author" id="bookauthor" required>
    </p>
-    <button id="add">Add</button>
+    <button id="add" >Add</button>
    </section>
+</section>
 
    <script src="file.js"></script>
 </body>
