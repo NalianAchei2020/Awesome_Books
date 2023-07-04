@@ -1,2 +1,2 @@
 # Awesome_Books
-This is Javascript library project where books can added and removed
+ This a javascript Library where you can add and remove books
