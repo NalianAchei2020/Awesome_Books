@@ -7,14 +7,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section class="main">
-   <section>
+    <section>
+    <header>
+        <div>Awesome Books</div>
+    <nav>
+        <ul class="list-item">
+            <li><a class="link active" href="#" id="books-link">List|</a></li>
+            <li><a  class="link" href="#" id="add-book-link">Add New|</a></li>
+            <li><a  class="link" href="#" id="contact-link">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<span class="time">Jul 5, 2023 14:23:11</span>
+</section>
+    <main class="main">
+   <section id="books-section">
     <h1 class="heading">All awesome books</h1>
     <table id="bookTable" class="display">
        
     </table>
    </section> 
-   <section class="books">
+   <section class="books hidden"  id="add-book-section">
     <h3>Add a new book</h3>
    <p>
     <input type="text" placeholder="Title" name="title" id="bookTitle" required>
@@ -27,8 +40,16 @@
     <button id="add" class="btn" >Add</button>
     </div>
    </section>
-</section>
-
+   <section class="contact hidden" id="contact-section">
+    <h1>My Contact Information</h1>
+    <p class="p1"> Do have any question or you just want to say "Hello"? You can reach out to us!</p>
+    <p>Our email: <a href="https://github.com/NalianAchei2020/">nalianachei2@gmail.com</a></p>
+   </section>
+</main>
+<footer>
+    <p>awesome books</p>
+    <p>© achei reserverd right</p>
+</footer>
    <script src="file.js"></script>
 </body>
 </html>
