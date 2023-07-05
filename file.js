@@ -1,5 +1,3 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable no-use-before-define */
 /* eslint-disable max-classes-per-file */
 const bookTitle = document.getElementById('bookTitle');
 const bookAuthor = document.getElementById('bookauthor');
