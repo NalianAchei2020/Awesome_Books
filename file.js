@@ -7,13 +7,14 @@ const main = document.querySelector('.main');
 let books = JSON.parse(localStorage.getItem('books')) || [];
 
 const addBook = (title, author) => {
-  const book = { title, author };
+  const id = Math.floor(Math.random() * 1000);
+  const book = { title, author, id };
   books.push(book);
   localStorage.setItem('books', JSON.stringify(books));
   display();
 };
-const removeBook = (title) => {
-  books = books.filter((book) => book.title !== title);
+const removeBook = (id) => {
+  books = books.filter((book) => book.id !== id);
   localStorage.setItem('books', JSON.stringify(books));
   display();
 };
@@ -26,7 +27,7 @@ const display = () => {
     span.appendChild(br);
     const removeButton = document.createElement('button');
     removeButton.textContent = 'Remove';
-    removeButton.addEventListener('click', () => removeBook(book.title));
+    removeButton.addEventListener('click', () => removeBook(book.id));
     span.appendChild(removeButton);
     const line = document.createElement('hr');
     span.appendChild(line);
