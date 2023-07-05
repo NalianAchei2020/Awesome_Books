@@ -62,9 +62,13 @@ const bookCollection = new BookCollection();
 function addBook() {
   const title = bookTitle.value;
   const author = bookAuthor.value;
-  bookCollection.addBook(title, author);
-  bookTitle.value = '';
-  bookAuthor.value = '';
+  if (title === '' && author === '') {
+    document.getElementById('errorMsg').innerHTML = 'Field must not be empty';
+  } else {
+    bookCollection.addBook(title, author);
+    bookTitle.value = '';
+    bookAuthor.value = '';
+  }
 }
 
 document.getElementById('add').addEventListener('click', addBook);

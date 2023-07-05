@@ -25,6 +25,7 @@ body{
    width: 100%;
    border: 2px solid black;
    padding: 0.5em 5px;
+   margin-bottom: 1em;
 }
 
 
@@ -39,23 +40,38 @@ body{
     width: 100%;
     gap: 0.3em;
 }
-.books h3{
+.books h2{
    width: 100%;
    text-align: center;
    border-top: 2px solid black;
    width: 20%;
-    padding-top: 1rem;
+    padding-block: 1rem 0.5em;
+
 }
 input{
     border: 2px solid #000;
-    width: 100%;
+    width: 350px;
+    height: 30px;
 }
 .btn{
     background-color: #fff;
     border: 2px solid #000
 }
+.mesaage{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+#errorMsg{
+    flex-basis: 30%;
+    color: rgb(216, 25, 25);
+}
 
 #add{
     position: relative;
-    right: -10%;
+   right: -2%;
+    height: 30px;
+    width: 80px;
 }
