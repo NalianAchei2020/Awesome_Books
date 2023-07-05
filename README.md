@@ -1,4 +1,4 @@
- <a name="readme-top"></a>
+  <a name="readme-top"></a>
 
 <div align="center">
 
@@ -34,7 +34,7 @@
 
 This a javascript Library where you can add and remove books
 
-*[Awesome_Books]* is a HTML and CSS project
+*[Awesome_Books]* is a HTML, Javascript and CSS project
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -71,7 +71,7 @@ Clone this repository to your desired folder:
 sh
 - Create a folder
 - cd in to folder you just created
-- Type git clone https://github.com/NalianAchei2020/Portfolio
+- Type git clone https://github.com/NalianAchei2020/Awesome_Books.git
 
 ### Install
 
@@ -88,7 +88,8 @@ To run the project, start the html file on live server
 
 On your terminal, cd to the current folder and run 
 - **npx hint** to test  the html code
-- npx stylelint "**/*.{css,scss}" to test the css code
+- npx stylelint ``"**/*.{css,scss}"`` to test the css code
+- npx eslint ``"**/*.{js,jsx}"`` to test the javascript code
 
 ### Deployment
 
