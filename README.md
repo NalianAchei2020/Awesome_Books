@@ -1,4 +1,4 @@
-  <a name="readme-top"></a>
+<a name="readme-top"></a>
 
 <div align="center">
 
@@ -52,7 +52,9 @@ This a javascript Library where you can add and remove books
 - *Contact Info*
 
 ## 🚀 Live Demo <a name="live-demo"></a>
+
 - [Live Demo ](https://nalianachei2020.github.io/Awesome_Books/)
+
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -71,7 +73,9 @@ Clone this repository to your desired folder:
 sh
 - Create a folder
 - cd in to folder you just created
+
 - Type git clone https://github.com/NalianAchei2020/Awesome_Books
+
 
 ### Install
 
