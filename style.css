@@ -63,6 +63,11 @@ a {
   margin-bottom: 1em;
 }
 
+tr:nth-child(even) {
+  background-color: rgb(225, 223, 223);
+  padding: 5px;
+}
+
 .one {
   width: 100%;
 }
@@ -76,7 +81,6 @@ a {
 }
 
 .books h3 {
-  width: 100%;
   text-align: center;
   border-top: 2px solid black;
   width: 20%;
@@ -122,6 +126,10 @@ input {
   text-align: center;
   width: 80%;
   margin: auto;
+}
+
+.emailLink {
+  text-decoration: underline;
 }
 
 .p1 {
