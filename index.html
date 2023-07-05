@@ -6,20 +6,23 @@
     <title>Awesome Books</title>
 </head>
 <body>
-    <h1>My Book Collection</h1>
-    <div>
-        <label for="title">Title:</label>
-        <input type="text" id="title">
-    </div>
-    <div>
-        <label for="author">Author:</label>
-        <input type="text" id="author">
-    </div>
-    <button id="add-btn">Add</button>
-    <hr>
-    <h2>Books:</h2>
-    <ul id="book-list"></ul>
-
+    <section class="main">
+        <section>
+         <article id="book-list">
+            
+         </article>
+        </section> 
+        <section class="books">
+         <h3>Add a new book</h3>
+        <p>
+         <input type="text" placeholder="Title" name="title" id="title" required>
+        </p>
+        <p>
+         <input type="text" placeholder="Author" name="author" id="author" required>
+        </p>
+         <button id="add-btn" >Add</button>
+        </section>
+     </section>
    <script src="file.js"></script>
 </body>
 </html>

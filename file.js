@@ -5,8 +5,10 @@ function displayBooks() {
   const bookList = document.getElementById('book-list');
   bookList.innerHTML = '';
   books.forEach((book) => {
-    const li = document.createElement('li');
+    const li = document.createElement('span');
     const text = document.createTextNode(`${book.title} by ${book.author}`);
+    const br = document.createElement('br');
+    li.appendChild(br);
     const removeBtn = document.createElement('button');
     removeBtn.innerText = 'Remove';
     removeBtn.addEventListener('click', () => removeBook(book));
