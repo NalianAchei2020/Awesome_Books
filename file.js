@@ -1,7 +1,6 @@
 /* eslint-disable max-classes-per-file */
 const bookTitle = document.getElementById('bookTitle');
 const bookAuthor = document.getElementById('bookauthor');
-const addBtn = document.getElementById('add');
 
 // Define the Book class
 class Book {
@@ -11,53 +10,49 @@ class Book {
   }
 }
 
-// Define the BookManager class
-class BookManager {
+class BookCollection {
   constructor() {
-    this.books = JSON.parse(localStorage.getItem('books')) || [];
+    this.books = [];
   }
 
-  addBook(book) {
+  addBook(title, author) {
+    const book = new Book(title, author);
     this.books.push(book);
-    localStorage.setItem('books', JSON.stringify(this.books));
+    this.displayBooks();
   }
 
-  removeBook(title) {
-    this.books = this.books.filter((book) => book.title !== title);
-    localStorage.setItem('books', JSON.stringify(this.books));
+  removeBook(book) {
+    const index = this.books.indexOf(book);
+    if (index > -1) {
+      this.books.splice(index, 1);
+      this.displayBooks();
+    }
   }
 
   displayBooks() {
-    const bookTable = document.getElementById('bookTable');
-    bookTable.innerHTML = '';
+    const bookList = document.getElementById('bookTable');
+    bookList.innerHTML = '';
     this.books.forEach((book) => {
-      const row = document.createElement('tr');
-      row.classList = 'row';
-      row.innerHTML = `
-        <td class = "one">${book.title} by ${book.author}</td>
-        <td class = "two"><button onclick="removeBook('${book.title}')">Remove</button></td>
-      `;
-      bookTable.appendChild(row);
+      const li = document.createElement('li');
+      const text = document.createTextNode(`${book.title} by ${book.author}`);
+      const removeBtn = document.createElement('button');
+      removeBtn.innerText = 'Remove';
+      removeBtn.addEventListener('click', () => this.removeBook(book));
+      li.appendChild(text);
+      li.appendChild(removeBtn);
+      bookList.appendChild(li);
     });
   }
 }
 
-// Define the functions to add and remove books
-addBtn.addEventListener('click', () => {
+const bookCollection = new BookCollection();
+
+function addBook() {
   const title = bookTitle.value;
   const author = bookAuthor.value;
-  const book = new Book(title, author);
-  bookManager.addBook(book);
-  bookManager.displayBooks();
-  bookTitle.value = '';
-  bookAuthor.value = '';
-});
-
-function removeBook(title) {
-  bookManager.removeBook(title);
-  bookManager.displayBooks();
+  bookCollection.addBook(title, author);
+  document.getElementById('title').value = '';
+  document.getElementById('author').value = '';
 }
 
-// Initialize the BookManager and display the existing books
-const bookManager = new BookManager();
-bookManager.displayBooks();
+document.getElementById('add').addEventListener('click', addBook);
