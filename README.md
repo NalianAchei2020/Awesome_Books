@@ -32,9 +32,9 @@
 
 # 📖 Awesome_Books <a name="about-project"></a>
 
-This a javascript Library where you can add and remove books
+This is a dynamic website developed with HTML, CSS, and JavaScript. where users can add books with the author's names, and users can as well delete the book from the book list.
 
-*[Awesome_Books]* is a HTML, Javascript and CSS project
+*[Awesome_Books]* is an HTML, Javascript, and CSS project
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -118,11 +118,11 @@ Feel free to check the [issues page](https://github.com/NalianAchei2020/Awesome_
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project, please do well to give a star
+If you like this project, please do well to give it a star
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank the microverse community for their lessons
+I would like to thank the Microverse community for their lessons
 
 ## 📝 License <a name="license"></a>
 
